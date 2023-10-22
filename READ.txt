@@ -1,0 +1,41 @@
+1. Mẫu thiết kế Strategy là một mẫu thiết kế hành vi cho phép bạn định nghĩa một tập hợp các thuật toán, đóng gói mỗi thuật toán, 
+và biểu diễn chúng dưới dạng các đối tượng để có thể chuyển đổi giữa các thuật toán một cách linh hoạt mà không làm thay đổi ngữ cảnh sử dụng thuật toán đó
+  áp dụng: giảm giá shopee
+
+2. Pattern Observer là một mẫu thiết kế phần mềm trong lập trình hướng đối tượng, nó cho phép một đối tượng, được gọi là Subject, 
+duy trì danh sách các đối tượng phụ thuộc, được gọi là Observers, và thông báo cho chúng về bất kỳ thay đổi nào trong trạng thái của Subject. 
+Khi trạng thái của Subject thay đổi, tất cả các Observers đều nhận được thông báo và tự động cập nhật mình.
+   
+3. Facade pattern giúp che giấu sự phức tạp của hệ thống bằng cách cung cấp một giao diện đơn giản cho việc tương tác với nó. 
+Điều này giúp người dùng tương tác với hệ thống một cách dễ dàng mà không cần biết chi tiết về cách hoạt động bên trong.
+
+4. Proxy pattern: là một mẫu thiết kế cấu trúc (structural design pattern) trong lập trình hướng đối tượng. 
+Nó cho phép bạn tạo ra một đối tượng thay thế hoặc truy cập đối tượng một cách kiểm soát bằng cách tạo ra một đối tượng trung gian, được gọi là proxy, để thay thế đối tượng gốc. 
+Proxy có thể thực hiện một số chức năng bổ sung như caching, kiểm soát quyền truy cập, hoặc làm việc với đối tượng gốc một cách hiệu quả hơn.
+   
+5. prototype Pattern: là một trong những mẫu thiết kế tạo ra đối tượng (creational design pattern). 
+Nó cho phép bạn tạo ra các đối tượng mới dựa trên các đối tượng đã tồn tại bằng cách sao chép (clone) chúng, giúp tránh việc tạo ra các đối tượng mới bằng cách sử dụng từ khóa new để gọi constructor. 
+Điều này giúp giảm bớt chi phí tạo đối tượng, đặc biệt là trong các trường hợp khi việc tạo đối tượng đòi hỏi việc lấy dữ liệu từ các nguồn dữ liệu bên ngoài hoặc yêu cầu các phép toán phức tạp
+
+6. builder pattern: một mẫu thiết kế creational, được sử dụng khi muốn tạo ra một đối tượng phức tạp từ các phần cấu thành. 
+Nó cho phép bạn tạo ra một đối tượng bước từng bước và cho phép bạn sử dụng các bước tùy ý hoặc theo một trình tự cụ thể để xây dựng đối tượng. Điều này giúp tránh việc có một constructor có quá nhiều tham số, giúp mã nguồn dễ đọc hơn và dễ bảo trì hơn.
+
+7. Adapter pattern: là một mẫu thiết kế cấu trúc (structural design pattern) trong lập trình hướng đối tượng. Mục tiêu chính của Adapter Pattern là chuyển đổi một interface thành một interface khác mà một client mong muốn sử dụng. 
+Điều này cho phép các lớp không thể làm việc cùng nhau do các interface không tương thích trở nên tương thích để làm việc
+   vd: như ổ điện 220V, máy tính chịu được sạc 12V nếu cắm điện vào máy tính sẽ bị hỏng do vậy cần 1 adapter ở giữa để chuyển đổi 220V sang 12V để có thể sạc máy tính
+
+8. Bridge pattern: một mẫu thiết kế cấu trúc (structural design pattern) trong lập trình hướng đối tượng. Mục tiêu của Bridge Pattern là tách biệt một abstraction từ implementation sao cho cả hai có thể thay đổi độc lập với nhau. 
+Nó giúp giảm sự phức tạp của một hệ thống bằng cách chia thành hai hierarchies độc lập, một là abstraction và một là implementation, giúp chúng có thể thay đổi mà không ảnh hưởng đến nhau.
+
+9. Factory Method Pattern: là một mẫu thiết kế creational, được sử dụng khi bạn muốn tạo ra một đối tượng nhưng không biết chính xác loại đối tượng đó sẽ là gì cho đến khi thời điểm chạy ứng dụng. 
+Factory Method Pattern cho phép một lớp (thường được gọi là Creator) chịu trách nhiệm về việc tạo ra đối tượng thông qua việc gọi một phương thức được gọi là "Factory Method". Lớp con (thường được gọi là ConcreteCreator) sẽ triển khai Factory Method để tạo ra đối tượng cụ thể.
+
+10. Simple factory pattern: (còn được gọi là Static Factory Method) không phải là một trong các mẫu thiết kế chính thức trong bộ ba creational patterns của thiết kế phần mềm, nhưng nó thường được sử dụng để giảm sự phức tạp khi tạo đối tượng. 
+Simple Factory Pattern là một mẫu thiết kế creational, trong đó một lớp (thường được gọi là Simple Factory hoặc Factory) chịu trách nhiệm tạo ra đối tượng cho các lớp khác dựa trên thông tin đầu vào, mà không tiết lộ logic tạo đối tượng đó.
+
+11. Singleton pattern: là một mẫu thiết kế creational, được sử dụng để đảm bảo rằng một lớp chỉ có một thể hiện (đối tượng) duy nhất trong toàn bộ ứng dụng. Mục tiêu của Singleton Pattern là đảm bảo rằng chỉ có một thể hiện của lớp được tạo ra và cung cấp một cách tiếp cận để truy cập đối tượng đó từ bất kỳ điểm nào trong ứng dụng.
+Điều quan trọng trong Singleton Pattern là hạn chế việc tạo thể hiện mới của lớp và cung cấp một cách duy nhất để lấy thể hiện đó. Điều này thường đảm bảo rằng một đối tượng Singleton sẽ được tạo ra một lần và có thể được truy cập bởi tất cả các phần của ứng dụng.
+
+
+
+
